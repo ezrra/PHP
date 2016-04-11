@@ -5,3 +5,7 @@ PSR-3: Logger Interface
 PSR-4: Autoloader
 
 
+PHP
+
+__sleep => Limpiar // Normalmente retorna el array en una conexión.
+__wakeup() => Restablecer conexión.
