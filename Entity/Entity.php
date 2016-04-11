@@ -51,7 +51,7 @@ class Entity {
     }
 
     /**
-     * Nos srive para eliminar la variable del array
+     * Nos sirve para eliminar la variable del array
      */
     public function __unset ($name)
     {

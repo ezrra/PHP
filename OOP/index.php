@@ -5,7 +5,6 @@ session_start();
 $_SESSION['user'] = array();
 $_SESSION['user']['name'] = 'Carlos';
 
-
 require('User.php');
 require('Coffee.php');
 

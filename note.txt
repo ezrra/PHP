@@ -9,3 +9,4 @@ PHP
 
 __sleep => Limpiar // Normalmente retorna el array en una conexión.
 __wakeup() => Restablecer conexión.
+__clone() => clone $object;

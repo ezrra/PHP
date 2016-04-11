@@ -3,6 +3,7 @@
 interface MyInterface {
 
     // Not attributes, alwayse public methods
+    // 
     public function method1($params);
 }
 
