@@ -8,9 +8,11 @@ define("APPPATH", PROJECTPATH . '/App');
 
 function autoload_classes ($class_name) {
 
-    $filename = PROJECTPATH . '/' . str_replace('\\', '/', $class_name) . '.php';
+    $filename = PROJECTPATH . '/' . str_replace('\\', '/', $class_name) .'.php';
 
     if (is_file($filename)) {
+
+    	// echo $filename;
         
         include_once $filename;
     }
@@ -18,3 +20,7 @@ function autoload_classes ($class_name) {
 }
 
 spl_autoload_register('autoload_classes');
+
+$app  = new \Core\App;
+
+$app->render();
