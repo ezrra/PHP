@@ -14,7 +14,7 @@ class App {
 
 	const NAMESPACE_CONTROLLERS = "\App\Controllers\\";
 
-	const CONTROLLERS_PATH = "../App/controllers/";
+	const CONTROLLERS_PATH = "/App/controllers/";
 
 	public function __construct () {
 
@@ -22,15 +22,17 @@ class App {
 
 		$url = $this->parseUrl();
 
-		echo ucfirst($url[0]);
+		echo PROJECTPATH . self::CONTROLLERS_PATH;
 
-		if (file_exists(self::CONTROLLERS_PATH.ucfirst($url[0]) . ".php")) {
+		// echo self::CONTROLLERS_PATH.ucfirst($url[0]) . ".php";
+
+		if (file_exists(PROJECTPATH . self::CONTROLLERS_PATH.ucfirst($url[0]) . ".php")) {
 			
-			// file name
-
 			$this->_controller = ucfirst($url[0]);
 
 			unset($url[0]);
+
+			// unset => destroy a specified variable
 		
 		} else {
 
@@ -70,12 +72,12 @@ class App {
 
 	public function parseUrl () {
 
-		// echo $_GET["url"];
+		// filter_var => A variable filter with filter specified
 
 		if (isset($_GET["url"])) {
 			
 			return explode("/", filter_var(rtrim($_GET["url"], "/"), FILTER_SANITIZE_URL));
-
+			// explode => split a string in several string
 		}
 	}
 
@@ -109,6 +111,5 @@ class App {
 
 		return $this->_params;
 	}
-
 
 }

@@ -5,3 +5,9 @@
 * PDO
 * .ini
 * Access control to files or folders not allowed
+
+
+
+Extras
+
+* implode
