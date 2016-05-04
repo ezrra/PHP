@@ -1,0 +1,7 @@
+* use spl_autoload_register
+* OOP
+* .htaccess URL
+* Interfaces CRUD
+* PDO
+* .ini
+* Access control to files or folders not allowed
