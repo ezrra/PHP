@@ -63,3 +63,5 @@ class User extends Crud {
 
     }
 }
+
+// Example by //uno-de-piera.com
