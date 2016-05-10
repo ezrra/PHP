@@ -75,14 +75,9 @@ $mi_carro = new Carro;
 // Añadir
 
 $mi_carro->agregar('mantequilla', 1);
+
 $mi_carro->agregar('leche', 3);
+
 $mi_carro->agregar('huevos', 6);
 
 print $mi_carro->obtenerTotal(0.05) . "\n";
-
-/**
- * Pasar por referencia => &
- * Funcionaes Anonimas => array_walk(), function ($cant ...)
- * constant
- * round()
- */

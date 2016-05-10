@@ -7,6 +7,7 @@ class Myclass {
     public function __get ($attribute) {
 
         if (isset($this->_data[$attribute])) {
+
             return $this->_data[$attribute];
         }
         else {
@@ -22,5 +23,7 @@ class Myclass {
 }
 
 $class = new Myclass(); 
-echo $class->one; //Imprime: numero uno 
-$class->one = 'Mi string';
+
+echo $class->one;
+
+$class->one = 'My string';

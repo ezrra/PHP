@@ -16,3 +16,11 @@ Parse
 Fatal
 Warning
 Info
+
+array_walk()
+
+str_word_count()
+
+substr()
+
+strpos()

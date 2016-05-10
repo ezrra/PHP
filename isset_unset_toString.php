@@ -6,7 +6,8 @@ class MyClass {
 
     public function __isset ($attribute) {
         
-        echo 'method!' . $attribute;
+        echo 'method' . $attribute;
+
         return false;
     }
 
@@ -19,8 +20,6 @@ echo isset($class->myAttribute);
 echo isset($class->notAttribute);
 
 empty($class->attributeEmpty);
-
-// ===
 
 // toString
 
